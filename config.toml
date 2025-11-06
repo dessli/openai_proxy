@@ -1,0 +1,11 @@
+# OpenAI API Configuration
+openai_api_key = "sk-your-api-key-here"
+openai_api_base = "https://your-custom-api.com"
+
+# Server Configuration
+# Listening Address, default 127.0.0.1 (local access only)
+# If you need to allow LAN access, set it to 0.0.0.0
+server_host = "127.0.0.1"
+
+# Listening Port, default 8080
+server_port = 8080
