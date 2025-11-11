@@ -2,6 +2,11 @@
 openai_api_key = "sk-your-api-key-here"
 openai_api_base = "https://your-custom-api.com"
 
+# API Version Configuration
+# Some providers use /v1 or /v3, configure it here
+# Default: "v1"
+api_version = "v1"
+
 # Server Configuration
 # Listening Address, default 127.0.0.1 (local access only)
 # If you need to allow LAN access, set it to 0.0.0.0
@@ -9,3 +14,11 @@ server_host = "127.0.0.1"
 
 # Listening Port, default 8080
 server_port = 8080
+
+# List of Available Models (Used when the upstream interface is not supported)
+[[available_models]]
+id = "model-id"
+object = "model"
+owned_by = "openai"
+enable_thinking = true  # Deep Thinking Configuration
+reasoning_effort = "low"  # Optional values: low, medium, high
